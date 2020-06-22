@@ -1,19 +1,19 @@
 class NoteList {
-  constructor() {
-    this.list = []
-  }
+    constructor() {
+        this.list = []
+    }
 
-  addToList(text) {
-    this.list.push({title: text})
-  }
+    addToList(text, body) {
+        this.list.push({ title: text, body })
+    }
 
-  listNotes(){
-    return this.list
-  }
+    listNotes() {
+        return this.list
+    }
 };
 
 module.exports = {
-  NoteList
+    NoteList
 };
 
 // let newItem = new NoteList()
