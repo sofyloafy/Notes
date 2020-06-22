@@ -12,8 +12,10 @@ var assert = {
     }
 
 
-
   };
+
+  // var note = new Note('I love JS!');
+  // console.log(note)
 
 module.exports =  {
   Note,
