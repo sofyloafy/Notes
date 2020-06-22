@@ -16,6 +16,6 @@ module.exports = {
   NoteList
 };
 
-let newItem = new NoteList()
-newItem.addToList('buy fromage')
-console.log(newItem.list)
+// let newItem = new NoteList()
+// newItem.addToList('buy fromage')
+// console.log(newItem.list)
