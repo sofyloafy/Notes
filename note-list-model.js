@@ -4,7 +4,11 @@ class NoteList {
   }
 
   addToList(text) {
-    this.list.push(text)
+    this.list.push({title: text})
+  }
+
+  listNotes(){
+    return this.list
   }
 };
 
@@ -12,6 +16,6 @@ module.exports = {
   NoteList
 };
 
-// let newItem = new NoteList()
-// newItem.addToList('buy fromage')
-// console.log(newItem.list)
+let newItem = new NoteList()
+newItem.addToList('buy fromage')
+console.log(newItem.list)
