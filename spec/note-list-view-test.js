@@ -8,7 +8,6 @@ let item = new functions.NoteListView(list.list,list.title,list.body);
 
 function testHTMLString(title, body) {
     list.addToList(title, body)
-    item.notelistview()
     assert.isTrue(item.notelistview() === `<ul><li><div>${title}: ${body}</div></li></ul>`)
 };
 
