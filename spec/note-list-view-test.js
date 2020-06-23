@@ -12,18 +12,6 @@ function testHTMLString(title, body) {
     assert.isTrue(item.notelistview() === `<ul><li><div>${title}: ${body}</div></li></ul>`)
 };
 
-
-    // const noteTemplate = new functions.NoteListView(list.list, list.title, list.body);
-//     console.log(noteTemplate.notelistview())
-//     assert.isTrue(noteTemplate.notelistview() === `<ul><li><div>todo: reflect</div></li></ul>`)
-
-// function testHTMLString() {
-//     const noteTemplate = new functions.NoteListView(list.list);
-//     console.log(noteTemplate.notelistview())
-//     assert.isTrue(noteTemplate.notelistview() === `<ul><li><div>to buy: milk</div></li></ul>`)
-// };
-
-
 testHTMLString('to buy', 'milk');
-// testHTMLString('to do', 'reflect');
-// testHTMLString('to do', 'think');
+testHTMLString('to do', 'reflect');
+testHTMLString('to do', 'think');

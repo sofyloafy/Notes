@@ -7,12 +7,14 @@ class NoteListView {
     }
 
     notelistview() {
-
-        var item = this.lists[0];
+        for(var i = 0; i < this.lists.length; i ++) {
+        var item = this.lists[i];
         console.log(item)
         var result = (`<ul><li><div>${item.title}: ${item.body}</div></li></ul>`)
         console.log(result)
-        return result
+        
+    }
+    return result
     }
 }
 
